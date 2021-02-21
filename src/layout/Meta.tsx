@@ -16,11 +16,7 @@ const Meta = (props: IMetaProps) => (
     <Head>
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width,initial-scale=1" key="viewport" />
-      <link
-        rel="apple-touch-icon"
-        href={`${process.env.baseUrl}/apple-touch-icon.png`}
-        key="apple"
-      />
+      <link rel="apple-touch-icon" href={`${process.env.baseUrl}/favicon-32x32.png`} key="apple" />
       <link
         rel="icon"
         type="image/png"
