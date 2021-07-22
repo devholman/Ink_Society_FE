@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Nav from 'components/Nav';
-// import InkLogo from '../assets/InkLogo';
 
 // import { Meta } from '../layout/Meta';
 // import { Main } from '../templates/Main';
@@ -19,9 +18,8 @@ const Index = () => (
   //     Boilerplate code for your Nextjs project with Tailwind CSS
   //   </h1>
   // </Main>
-  <div className="h-screen bg-black">
+  <div className="h-screen">
     <Nav />
-    {/* <InkLogo/> */}
     <div className="absolute bottom-0 left-0 m-8 md:m-16 h-1/4">
       <h1 className="text-white text-3xl md:text-6xl extrabold">
         The last bookclub manager you&apos;ll need.
