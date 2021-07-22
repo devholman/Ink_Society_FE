@@ -1,17 +1,17 @@
 import React from 'react';
 
+import { Meta } from 'layout/Meta';
 import { connect } from 'react-redux';
-
-import { Meta } from '../layout/Meta';
-import { setCurrentUser } from '../redux/actions/user.action';
-import { Main } from '../templates/Main';
+import { setCurrentUser } from 'redux/actions/user.action';
+import { RootState } from 'redux/store';
+import { Main } from 'templates/Main';
 
 interface Props {
   currentUser: string;
-  setCurrentUser: () => void;
+  setCurrentUser(arg0: string): {};
 }
 
-const About = ({ currentUser, setCurrentUser }: Props) => (
+const About = ({ currentUser, setCurrentUser }: Props): JSX.Element => (
   <Main meta={<Meta title="Lorem ipsum" description="Lorem ipsum" />}>
     <h1>{currentUser}</h1>
     <p>
@@ -30,9 +30,6 @@ const About = ({ currentUser, setCurrentUser }: Props) => (
   </Main>
 );
 
-const mapStateToProps = (state) => {
-  const { user } = state;
-  return user;
-};
+const mapStateToProps = ({ user }: RootState) => user;
 
 export default connect(mapStateToProps, { setCurrentUser })(About);

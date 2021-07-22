@@ -1,11 +1,10 @@
 import { HYDRATE } from 'next-redux-wrapper';
 import { AnyAction } from 'redux';
-
-import { UserState } from '../_types/States';
-import { ActionTypes } from '../actions/user.action';
+import { UserState } from 'redux/_types/States';
+import { ActionTypes } from 'redux/actions/user.action';
 
 const INITIAL_STATE = {
-  currentUser: 'hello',
+  currentUser: '',
 };
 const userReducer = (state: UserState = INITIAL_STATE, action: AnyAction): UserState => {
   switch (action.type) {

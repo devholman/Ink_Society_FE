@@ -9,3 +9,5 @@ export const makeStore: MakeStore = () => createStore(rootReducer, composeWithDe
 
 // export an assembled wrapper
 export const storeWrapper = createWrapper(makeStore);
+
+export type RootState = ReturnType<typeof rootReducer>;

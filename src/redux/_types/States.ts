@@ -1,3 +1,3 @@
 export interface UserState {
-  currentUser: string | null;
+  currentUser: string;
 }
