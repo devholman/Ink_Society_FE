@@ -5,6 +5,7 @@
     "project": "./tsconfig.json"
   },
   "rules": {
+    // "no-restricted-imports": ["error", { "paths": ["import1", "import2"] }],https://eslint.org/docs/rules/no-restricted-imports
     "react/destructuring-assignment": "off", // Vscode doesn't support automatically destructuring, it's a pain to add a new variable
     "jsx-a11y/anchor-is-valid": "off", // Next.js use his own internal link system
     "react/require-default-props": "off", // Allow non-defined react props as undefined
