@@ -1,3 +1,11 @@
+:root {
+  --body-bg-white:#f6f4f4eb;
+}
+
+body{
+  background-color: var(--body-bg-white);
+}
+
 @tailwind base;
 
 a {

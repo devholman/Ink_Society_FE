@@ -2,17 +2,17 @@ import React, { useEffect } from 'react';
 
 import Nav from 'components/Nav';
 
-// import InkLogo from '../assets/InkLogo.svg';
+import InkLogo from '../assets/InkLogo.svg';
 
 const Index = () => {
   useEffect(() => {
-    function scrollFunction() {
+    const scrollFunction = (): void => {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById('navbar')!.style.top = '0';
       } else {
         document.getElementById('navbar')!.style.top = '-300px';
       }
-    }
+    };
     if (window !== 'undefined') {
       window.onscroll = () => {
         scrollFunction();
@@ -21,10 +21,10 @@ const Index = () => {
   });
 
   return (
-    <div>
+    <>
       <Nav />
       <div className="h-screen">
-        <div>{/* <InkLogo className="max-h-1/2" /> */}</div>
+        <InkLogo className="max-h-1/2" />
         <div>
           <div className="absolute text-black bottom-0 left-0 m-8 md:m-16 h-1/6 typewriter">
             <h1 className="text-3xl md:text-6xl extrabold ">The last bookclub</h1>
@@ -32,7 +32,7 @@ const Index = () => {
           </div>
         </div>
       </div>
-      <div className="py-12 bg-white">
+      <div className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
             <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
@@ -45,13 +45,11 @@ const Index = () => {
               Lorem ipsum dolor sit amet consect adipisicing elit.
             </p>
           </div>
-
           <div className="mt-10">
             <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
               <div className="relative">
                 <dt>
                   <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                    {/* <!-- Heroicon name: outline/globe-alt --> */}
                     <svg
                       className="h-6 w-6"
                       xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +78,6 @@ const Index = () => {
               <div className="relative">
                 <dt>
                   <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                    {/* <!-- Heroicon name: outline/scale --> */}
                     <svg
                       className="h-6 w-6"
                       xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +106,6 @@ const Index = () => {
               <div className="relative">
                 <dt>
                   <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                    {/* <!-- Heroicon name: outline/lightning-bolt --> */}
                     <svg
                       className="h-6 w-6"
                       xmlns="http://www.w3.org/2000/svg"
@@ -138,7 +134,6 @@ const Index = () => {
               <div className="relative">
                 <dt>
                   <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                    {/* <!-- Heroicon name: outline/annotation --> */}
                     <svg
                       className="h-6 w-6"
                       xmlns="http://www.w3.org/2000/svg"
@@ -167,7 +162,7 @@ const Index = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
