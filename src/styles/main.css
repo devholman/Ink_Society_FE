@@ -1,5 +1,9 @@
+:root {
+  --body-bg-white:#f6f4f4eb;
+}
+
 body{
-  background-color: #f6f4f4eb;
+  background-color: var(--body-bg-white);
 }
 
 @tailwind base;
