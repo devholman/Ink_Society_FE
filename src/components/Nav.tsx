@@ -1,10 +1,12 @@
 import React from 'react';
 
+import InkLogo from '../assets/InkLogo.svg';
+
 const Nav = () => (
-  <div className="text-white p-6">
+  <div className="p-2">
     <nav className="flex flex-rows justify-between">
-      <div>logo</div>
-      <ul className="flex flex-row space-x-4">
+      <InkLogo height="125" />
+      <ul className="flex flex-row space-x-4 self-center">
         <li>about</li>
         <li>sign in</li>
         <li>books</li>
