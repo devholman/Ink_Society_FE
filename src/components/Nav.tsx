@@ -1,8 +1,7 @@
 import React from 'react';
 
+import InkLogo from 'assets/InkLogo.svg';
 import Link from 'next/link';
-
-import InkLogo from '../assets/InkLogo.svg';
 
 const Nav = () => (
   <div id="navbar" className="p-1 fixed w-full">

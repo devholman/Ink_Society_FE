@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 
+import InkLogo from 'assets/InkLogo.svg';
 import Nav from 'components/Nav';
-
-import InkLogo from '../assets/InkLogo.svg';
 
 const Index = () => {
   useEffect(() => {
