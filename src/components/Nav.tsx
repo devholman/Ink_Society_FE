@@ -1,15 +1,28 @@
 import React from 'react';
 
-import InkLogo from '../assets/InkLogo.svg';
+import InkLogo from 'assets/InkLogo.svg';
+import Link from 'next/link';
 
 const Nav = () => (
-  <div className="p-2">
-    <nav className="flex flex-rows justify-between">
-      <InkLogo height="125" />
+  <div id="navbar" className="p-1 fixed w-full">
+    <nav className="flex flex-rows justify-between block">
+      <InkLogo height="100" />
       <ul className="flex flex-row space-x-4 self-center">
-        <li>about</li>
-        <li>sign in</li>
-        <li>books</li>
+        <li>
+          <Link href="/">
+            <a>about</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/">
+            <a>signIn</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/">
+            <a>books</a>
+          </Link>
+        </li>
       </ul>
     </nav>
   </div>

@@ -14,10 +14,17 @@ module.exports = {
       '5xl': '3rem',
       '6xl': '4rem',
     },
+    maxHeight: {
+      0: '0',
+      '1/4': '25rem',
+      '1/2': '35rem',
+      '3/4': '50rem',
+      full: '100%',
+    },
     extend: {
       colors: {
         gray: {
-          lt: '#999999',
+          lt: '#B8B7B7',
           md: '#666666',
           dk: '#333333',
           400: '#cbd5e0',
